@@ -21,7 +21,6 @@ function prepareTestsForDevices(deviceList: DeviceListArray) {
 					context(`Testing on ${device.model}`, () => {
 						beforeEach(() => {
 							cy.viewport(device.width, device.height);
-							cy.visit(page);
 						});
 
 						callback();
