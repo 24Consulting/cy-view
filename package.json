@@ -7,7 +7,8 @@
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "tsc ./src/index.ts",
-		"test": "no tests specified"
+		"test": "no tests specified",
+		"postinstall": "npm run build"
 	},
 	"keywords": [
 		"cypress",
